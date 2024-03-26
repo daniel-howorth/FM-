@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app-wrapper">
+      <nav>
+        <ul class="top-nav">
+          <li>
+            <img src="./images/logo.svg" alt="snap logo" class="nav-logo" />
+          </li>
+          <li>
+            <div class="nav-with-dropdown">
+              <span>Features</span>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="arrow down"
+                class="arrow-down"
+              />
+              <div class="dropdown hidden">
+                <ul></ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="nav-with-dropdown">
+              <span>Company</span>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="arrow down"
+                class="arrow-down"
+              />
+              <div class="dropdown hidden">
+                <ul>
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+          <li id="login-btn-container">Login</li>
+          <li><div id="register-btn">Register</div></li>
+        </ul>
+      </nav>
+      <div class="max-width-wrapper">
+        <main>
+          <div class="text-container">
+            <div class="title-width-wrapper">
+              <h1>Make <span id="title-wrap">remote work</span></h1>
+            </div>
+            <div class="text-width-wrapper">
+              <p>
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+            </div>
+            <div id="learn-more-btn">Learn more</div>
+            <div class="logo-width-wrapper">
+              <div id="clients-logo-container">
+                <img src="./images/client-databiz.svg" alt="databiz logo" /><img
+                  src="./images/client-audiophile.svg"
+                  alt="audiophile logo"
+                /><img src="./images/client-meet.svg" alt="meet logo" /><img
+                  src="./images/client-maker.svg"
+                  alt="maker logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./images/image-hero-desktop.png" alt="" />
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/daniel-howorth">Daniel Howorth</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
